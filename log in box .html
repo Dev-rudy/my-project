@@ -4,7 +4,7 @@
 
 <title> basic log in screen</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0";>
+<meta name="viewport" content="width=device-width,initial-scale=1.0";><!--this is a meta responsibe scale-->
 </head>
 
 <style type="text/css">
@@ -26,7 +26,7 @@ label{font-family:times new roman;color:teal;}
 
 input{padding:auto;align:center;background-color:black;margin-bottom:10px;margin-left:auto;border-right:2px solid teal;
 border-bottom:2px solid teal; border-top:1px;border-left:1px;
-border-radius:3px;color:teal;outline-color:teal;box-shadow:2px 2px 70px 10px teal;}
+border-radius:3px;color:teal;outline-color:teal;box-shadow:10px 10px 100px 10px teal;}
 
 h5{color:teal;font-family:times new roman;margin:0px;}
 .submit{display:block;margin:auto;padding:auto;color:teal;box-shadow:5px 5px 30px 10px teal;}
@@ -37,29 +37,37 @@ pre{color:teal;}
 .psw{display:block;text-align:center;margin-left:auto;}
 .uname{display:block;text-align:center;margin-left:auto;}
 .email{display:block;text-align:center;margin-left:auto;}
-
+.det{background-color:black; width:45%;color:teal;
+margin-left:0;box-shadow:10px 10px 100px 10px;border-radius:10px;}
+.detto,a{text-decoration:none;padding-left:10px;color:teal;display:inline-block;}
+summary{font-size:small;}
 </style>
 
 
 
 <body class="body">
-
+<details class="det">
+<summary>don't have an account?</summary>
+<p class="detto"><a href="#">Register?</a></p>
+<p class="detto"><a href="#">follow us</a></p>
+<p class="detto"><a href="#">details</a></p>
+</details>
 
 <div class="loginbox">
 
 <h1 class="h1">Log in</h1>
 
 <hr id="hr">
-<form class="form" action="sample-data-handler.html" method="Get">
+<form class="form" action="sample-data-handler.html" method="GET">
 
-<label for="username">User-Name:</label>
-<input  class="uname" type="text" name="username" placeholder="username">
+<label for="username">User-Name:</abbr></label>
+<input  spellcheck="true" class="uname" type="text" name="username" placeholder="username">
 
 <label for="password">Password:  </label>
-<input class="psw" type="password" name="password" placeholder="password">
+<input spellcheck="true" class="psw" type="password" name="password" placeholder="password">
 
 <label for="E-mail">E-mail:</label>
-<input class="email" type="E-mail" name="email"placeholder="E-mail">
+<input spellcheck="true" class="email" type="E-mail" name="email"placeholder="E-mail">
 
 
 <hr id="hr">
@@ -67,7 +75,7 @@ pre{color:teal;}
 <h5>Remember Me!</h5>
 
 <label class="radio" for="radio">yes!</label>
-<input class="circle" name="radio" type="radio" >
+<input class="circle" name="radio" type="checkbox" >
 <hr id="hr">
 <br>
 <input class="submit" type="submit">
