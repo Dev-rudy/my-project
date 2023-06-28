@@ -2,29 +2,27 @@
 <html>
 
 <head>
-<title>
-
-
-</title>
+<title>title not implemented yet</title>
 
 <meta name="description" content="#"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="keywords" content="#"/>
 
-<style>
+<style type="text/css">
 *{margin:0px;padding:0px;box-sizing:border-box;}
 a{text-decoration:none;}         /*ps disable this if nescessary*/
-#logo>a>img{height:auto;width:10vw;:position:relative;
+#logo>a>img{height:auto;width:100px;:position:relative;
 margin-left:5px;margin-top:5px;}
-#logo{height:auto;width:auto;margin:1px;position:relative;display:block;}
-#menu>li{display:inline-block;margin-left:20px;
-position:relative;font-family:fantasy;font-size:45px;}
+#logo{height:auto;width:auto;margin:3px;position:relative;display:block;}
+#menu{margin-left:10%;position:relative;top:-20px;}
+#menu>li{display:inline;margin-left:2px;
+position:relative;font-family:fantasy;font-size:1.1rem;}
 #menu>li:hover{text-shadow:-1px 3px 10px violet;}
-#menu{margin-left:10vw;position:relative;top:-80px;}
-body{background:black;}
-#navs{height:105px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
 
-#headbuttons{float:right;position:absolute;top:-40px;right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
+body{background:black;}
+#navs{display:grid;height:105px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
+
+#headbuttons{height:60px;float:right;position:absolute;top:-60px;right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
 #headbuttons:hover{width:100px;}
 #dlbody{background:black;color:white;font-family:cursive;font-size:2vw;width:100%;height:50%;}
 #dlbody2{background:black;color:white;font-family:cursive;font-size:2vw;width:100%;height:50%;}
@@ -32,7 +30,7 @@ body{background:black;}
 .bodycontentgrid{display:grid;
 grid-template-columns:1fr 1fr;color:white;height:100%;width:100%;grid-gap:2px;}
 .bodycontentgrid>div{background-color:gray;}
-#one{grid-column:1/3;background:teal;}
+#one{grid-column:1/3;background:black;}
 #two{grid-row:2/5;grid-column:1/3;background:transparent;overflow-x:auto;
 display:grid;grid-template-columns:repeat(5,1fr);
 text-align:center;grid-gap:1%;padding:5px; }
@@ -63,149 +61,31 @@ background:transparent;height:auto;width:5%;margin:2px;}                        
 #dmObj>a>img:hover{opacity:1;}                           /*  this is the invisible button on bottom right*/
 
 
-#section{height:900px;width:100%;background:transparent;padding:1px;text-align:center;font-weight:bold;font-size:xx-large;margin:1px;}
-#card{display:inline-block;height:20%;width:20%;
+#section{height:900px;width:100%;background:transparent;padding:1px;text-align:center;font-weight:bold;font-size:2rem;margin:1px;}
+#card{display:inline-block;height:20%;width:40%;
 position:relative;margin:15px;border:1px solid green;margin-top:40px;transition-duration:2s;}
-#card:hover{width:25%;height:35%;box-shadow:1px 5px 50px green;}
+#card:hover{width:43%;height:25%;box-shadow:1px 5px 50px green;}
 #nettie{color:white;}
 #hulu{color:lightgreen;font-family:fantsy; }
 #hulu:hover{text-shadow:1px -1px  5px green;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 480px){
-#headbuttons{float:right;position:absolute;top:-70px;right:5px;border:2px solid green;width:0px;height:50px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:20%;position:relative;top:-35px;}
-#menu>li{display:inline-block;margin-left:10px;
-position:relative;font-family:fantasy;font-size:500px;}
-#logo>a>img{height:auto;width:100px;:position:relative;
-margin-left:5px;margin-top:5px;}
-#dmObj{position:fixed;bottom:5px;right:8%;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:5%;margin:1px;}
-#dmObj>a>img{opacity:0.4;height:auto;width:70px;}
-
-#section{height:900px;width:100%;background:transparent;padding:1px;text-align:center;font-weight:bold;font-size:large;margin:1px;}
-#card{display:inline-block;height:10%;width:20%;
-position:relative;margin:15px;border:1px solid green;margin-top:40px;transition-duration:2s;}
-#card:hover{width:25%;height:15%;box-shadow:1px 5px 50px green;}
-#nettie{color:white;}
-#hulu{color:lightgreen;font-family:fantsy; }
-#hulu:hover{text-shadow:1px -1px  5px green;}
-
-}
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 700px) {
-
-#headbuttons{float:right;position:absolute;top:-60px;right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:5%;position:relative;top:-70px;}
-#menu>li{display:inline-block;margin-left:70px;
-position:relative;font-family:fantasy;font-size:30px;}
-#logo>a>img{height:auto;width:260px;:position:relative;
-margin-left:7px;margin-top:7px;}
-#dmObj{position:fixed;bottom:5px;right:10%;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:5%;margin:1px;} 
- #navs{height:120px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
-	#card{display:inline-block;height:20%;width:20%;
-position:relative;margin:10px;border:1px solid green;margin-top:40px;transition-duration:2s;}
-	#card:hover{width:25%;height:25%;box-shadow:1px 5px 50px green;}
-}
-@media only screen and (max-width: 768px){      /* this break aint working*/
-#headbuttons{float:right;position:absolute;top:-60px;right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:5%;position:relative;top:-0px;}
-#menu>li{display:inline-block;margin-left:30px;
-position:relative;font-family:fantasy;font-size:30px;}
-#logo>a>img{height:auto;width:100px;:position:relative;
-margin-left:7px;margin-top:7px;}
-#dmObj{position:fixed;bottom:5px;right:10%;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:5%;margin:1px;} 
- #navs{height:120px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
-	#card{display:inline-block;height:20%;width:20%;
-position:relative;margin:10px;border:1px solid green;margin-top:40px;transition-duration:2s;}
-	#card:hover{width:25%;height:25%;box-shadow:1px 5px 50px green;}
-	
-}
-@media only screen and (min-width:834px){
-	#headbuttons{float:right;position:absolute;top:-60px;right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:15%;position:relative;top:-60px;}
-#menu>li{display:inline-block;margin-left:30px;
-position:relative;font-family:fantasy;font-size:30p;}
-#logo>a>img{height:auto;width:200px;:position:relative;
-margin-left:7px;margin-top:7px;}
-#dmObj{position:fixed;bottom:5px;right:9%;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:5%;margin:1px;} 
- #navs{height:120px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
-	#card{display:inline-block;height:20%;width:20%;
-position:relative;margin:10px;border:1px solid green;margin-top:40px;transition-duration:2s;}
-	#card:hover{width:25%;height:25%;box-shadow:1px 5px 50px green;}
-	#navs{height:130px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
-
-}
-@media only screen and (max-width: 1024px){
-#headbuttons{float:right;position:absolute;top:-60px;right:5px;border:2px solid green;width:0px;height:80px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:16%;position:relative;top:-60px;}
-#menu>li{display:inline-block;margin-left:50px;
-position:relative;font-family:fantasy;font-size:30px;}
-#logo>a>img{height:auto;width:150px;:position:relative;
-margin-left:5px;margin-top:5px;}
-	#dmObj{position:fixed;bottom:5px;right:30px;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:15%;margin:1px;} 
-}
- 
-
-@media only screen and (max-width: 1200px){ /*----break---working---*/
-
-#headbuttons{float:right;position:absolute;top:-20px;
-right:5px;border:2px solid green;width:0px;overflow:hidden;transition-duration:1s;}
-#menu{margin-left:10%;position:relative;top:0px;}
-#menu>li{display:inline-block;margin-left:70px;
-position:relative;font-family:fantasy;font-size:10%}
-#logo>a>img{height:auto;width:200px;:position:relative;
-margin-left:7px;margin-top:7px;}
-#dmObj{position:fixed;bottom:5px;right:3%;z-index:1;     /*  this is the invisible button on bottom right*/
-background:transparent;height:auto;width:5%;margin:1px;} 
- #navs{height:120px;width:100%;margin:auto;border:1px solid blue;border-top-color:red;border-right-color:red;}
-
-}
-
-@media only screen and (max-width: 1440px){#headbuttons{float:right;position:absolute;top:-120px;right:5px;border:2px solid green;width:0px;height:80px;overflow:hidden;transition-duration:1s;}
-                                           #menu{margin-left:16%;position:relative;top:-90px;}
-                                           #menu>li{display:inline-block;margin-left:50px;
-                                           position:relative;font-family:fantasy;font-size:100%;}
-                                           #logo>a>img{height:auto;width:250px;:position:relative;
-                                           margin-left:5px;margin-top:5px;}
-                                           #dmObj{position:fixed;bottom:5px;right:3%;z-index:1;     
-                                            background:transparent;height:auto;width:5%;margin:1px;}  
-                                           }
 
 
 </style>
 
+
 </head>
+
+
+
 <body id="body">
 <header>
 
 
 <nav id='navs'>   <!----- navigation menu   -----START------- id="navs"  ---------------------!!!!!!--->
-      <div id="logo"> <a href="#hulu"><img src="logo2.png" alt="void website logo"/></a></div>
+      <div id="logo"> <a href="#hulu"><img class="logo" src="logo2.png" alt="void website logo"/></a></div>
 	   <ul id="menu">
           <li><a href="#">Channels</a></li>
           <li><a href="#">Best deals</a></li>
@@ -221,7 +101,28 @@ background:transparent;height:auto;width:5%;margin:1px;}
 </header>
 <section>
 <div class="bodycontentgrid">
-<div id="one">1 placeholder for marquee animation</div>
+<div id="one">1 placeholder for marquee animation
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
+fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
+consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+doloremque. Quaerat provident commodi consectetur veniam similique ad 
+earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
+fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
+suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+quasi aliquam eligendi, placeat qui corporis!</div>
 
 <div id="two">
 <div title="its a pruduct"><a href="#"><img src="https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=1024x1024&w=is&k=20&c=HZ3aN-WLxmMBwTh5mGYFVXYn84xPGw-Pj0gVKwb4BOE=" alt="affeliate pruduct"/></a><p id="prodDESC"><span id="itemdesc">pruduct desc<strike id="offprice">₱xx</strike></span><br>abc123ff<br>ffffffff
@@ -245,9 +146,9 @@ fffffff<br>fffffffffffffffffffffff</p> </div>
 </div>
 </section>
 
-<div id="dmObj" title="you want your
+<div id="dmObj" class="dmobj" title="you want your
  pruduct to be advertized in this page?  send us
- a dm and lets talk about it"><a href="direct chat acces ps "><img src="TOUCHTYPE.png"></a></div>
+ a dm and lets talk about it"><a href="direct chat acces ps "><img class="dmobjimg" src="TOUCHTYPE.png"></a></div>
 <section>
 <div id='section'>
 <h3 id="nettie">Recomended from<span id="hulu" title="want to Visit Hulu?">&nbsp <a href="#" style="color:lightgreen;">Hulu</a></span></h3>
